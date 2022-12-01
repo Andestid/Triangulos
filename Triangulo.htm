@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Triangulo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/estilos.css" media="screen" />
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Calculo Triangulo</h1>
+</div> 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>¿Que tipo de Triangulo quieres?</h3>
+      <div class="form-group">
+        <label for="sel1">Tipo de Triangulo </label>
+        <select id="triangulo">
+          <option>- Escoge tipo -</option>
+          <option>Isosceles</option>
+          <option>Equilatero</option>
+          <option>Escaleno</option>
+        </select>
+        <br><br>
+      <input type="button" class="btn btn-primary" value="Seleccionar" OnClick="cambio()"> 
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img id="Tr" src="img/default.jpg" width="300" height="300">
+    </div>
+    <div class="col-sm-4">
+      <h3>Calculos</h3>   
+      <br>     
+      a = <input id="a" class="form-input type=" type="text" >
+      <br><br>
+      b = <input id="b" class="form-input type=" type="text" > 
+      <br><br>
+      c = <input id="c" class="form-input type=" type="text" > 
+      <br><br>
+      <input type="button" class="btn btn-primary" value="Sumar" OnClick="suma()"> 
+      <input type="button" class="btn btn-primary" value="Aleatorio" OnClick="Random()">
+      <br><br>
+      Resultado = <input id="ans" class="form-input type=" type="text" size=10> 
+      <br><br>
+    </div>
+  </div>
+</div>
+<script src="JS/calcular.js"> </script>
+</body>
+</html>
